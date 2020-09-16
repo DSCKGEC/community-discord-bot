@@ -27,7 +27,7 @@ client.once('ready', () => {
 client.on("guildMemberAdd", (member) => {
 	let guild = member.guild; // Reading property `guild` of guildmember object.
 	if(guild.systemChannel){ // Checking if it's not null
-		guild.systemChannel.send('nWelcome ' + member.displayName + " to the Official DSC KGEC Discord Server!\nHead over the #info channel to get started.");
+		guild.systemChannel.send('Welcome ' + member.displayName + " to the Official DSC KGEC Discord Server!\nHead over the #info channel to get started.");
 	}
 });
 
@@ -48,12 +48,22 @@ client.on('message', message => {
 
 	/* ------------------ Commands & Responses ----------------- */
 
+    
+    // Command 0: Default Welcome
+    if (message.content.toLowerCase() === `${prefix}welcome`) {
+        const user = getUserFromMention(args[0]);
+        if (!user) {
+            return message.channel.send('Could not fetch tagged user.');
+        } else {
+            message.channel.send('Welcome ' + `${user}` + " to the Official DSC KGEC Discord Server!\nHead over the #info channel to get started.");
+        }
+    }
 
 	// Command 1: Ping - to test whether the bot is live
-	if (message.content.toLowerCase() === `${prefix}ping`) {
+	else if (message.content.toLowerCase() === `${prefix}ping`) {
 		message.channel.send('Willy here, live.');
 	} 
-
+	
 	
 	// Command 2: Add-Event - to display a new event input by an admin
 	else if (message.content.toLowerCase() === `${prefix}add-event`) {
