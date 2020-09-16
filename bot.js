@@ -70,7 +70,7 @@ client.on('message', message => {
             if (!user) {
                 return message.channel.send('Could not fetch tagged user.');
             } else {
-                message.channel.send('Welcome ' + `${user}` + " to the Official DSC KGEC Discord Server!\nHead over the " + message.guild.channels.cache.get('755165862297731173').toString() +  " channel to get started.");
+                message.channel.send('Welcome ' + `${user}` + " to the Official DSC KGEC Discord Server!\nHead over the " + message.guild.channels.cache.get('755165862297731173').toString() +  " channel to get started.\n--------------------");
             }
         } else {
             message.channel.send('No one tagged!');
