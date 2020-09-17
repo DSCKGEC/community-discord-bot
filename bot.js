@@ -184,7 +184,7 @@ client.on('message', message => {
 
 
 	else {
-		message.channel.send(`I haven't been programmed for that command yet.\n> We encourage you to add more commands and contribute to the development of the bot. It would really be a fun learning experience this lockdown!\n> Send a PR with your contributions to our repository: https://github.com/DSCKGEC/community-discord-bot`)
+		message.channel.send(`I haven't been programmed for that command yet.\n> We encourage you to add more commands and contribute to the development of the bot. It would really be a fun learning experience this pandemic. \n\n> Send a PR with your contributions to our repository: https://github.com/DSCKGEC/community-discord-bot`)
 	}
 
 });
