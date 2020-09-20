@@ -31,8 +31,7 @@ let announcementChannel;
 // this event will only trigger one time after logging in
 client.once('ready', () => {
 	console.log('Ready!');
-	announcementChannel = client.channels.cache.get('756097508719067247');
-	// announcementChannel = client.channels.cache.get('755165871793635480');
+	announcementChannel = client.channels.cache.get('755165864327905371');
 });
 
 
