@@ -5,7 +5,7 @@ const genericHelpMessage = new Discord.MessageEmbed()
 .setColor('#0099ff')
     .setTitle('Hello, This is Dino_ :wave:')
     .setURL('https://github.com/dsckgec/community-discord-bot')
-    .setDescription('You can find the list of commands I currently support below!')
+    .setDescription('I am the official bot of the DSC KGEC Community server!\nI am being developed by the community here - https://github.com/dsckgec/community-discord-bot \nI would be really happy if you contribute a PR and help me grow 🤗 \nYou can find the list of commands I currently support below!')
     .setThumbnail(dp)
     .addFields(
         { name: '!ping', value: 'Check whether our bot is alive or not!' },
@@ -20,7 +20,6 @@ const genericHelpMessage = new Discord.MessageEmbed()
         { name: 'New user joins', value: 'DM the user asking for IRL name and college. and setting their nicknames and roles accordingly' },
         { name: 'Adding domain badge to any user', value: 'There is a #🔖-get-roles channel wherein, a user can select his/her domain of interest by clicking on an emote and I automatically add the domain\'s badge to his/her profile so that others are able to know each other\'s interests!' },
     )
-    .setTimestamp()
     .setFooter('I don\'t like meteors much 😐', dp);
 
 const helpHandler = (message, args) => {
