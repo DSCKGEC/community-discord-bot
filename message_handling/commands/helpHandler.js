@@ -3,30 +3,26 @@ const Discord = require('discord.js')
 
 const genericHelpMessage = 
 `
-*Hello, This is Willy*
-            
-I'm the official Discord bot of DSC KGEC Server.. 
+**Hello, This is Dino_ :wave:**            
+I'm the official Discord bot of the DSC KGEC Server!
 
 Here is a list of commands currently available. My developers are working to bring more commands. Why don't you join them @ github - https://github.com/DSCKGEC/community-discord-bot
 
-\`ping\`: Check whether our bot is alive or not!
+- \`ping\`: Check whether our bot is alive or not!
+- \`welcome @user\`: Send a welcome message to a sppecific user on the channel they landed on.
+- \`auth\`: To check if you are an admin of the server or not.
+- \`scrape\`: Currently scrapes latest news and events from DSC official website.
+- \`sudmit-idea\`: If you have any project or event ideas, drop them in using this command!
+- \`report\`: Have any issue or complaint? Use this command to send a secret report to the server admins.
+- \`add-event [ADMIN only]\`: If you are a server Admin, you can announce about latest event!
+- \`clist-live [optional- number of contests you want to see, default 1]\`: Get a list of already going contests
+- \`clist-up [optional- number of contests you want to see, default 1]\`: Get a list of upcoming contests
 
-\`welcome @user\`: Send a welcome message to a sppecific user on the channel they landed on.
-
-\`auth\`: To check if you are an admin of the server or not.
-
-\`scrape\`: Currently scrapes latest news from DSC official website.
-
-\`sudmit-idea\`: If you have any project or event ideas, drop them in using this command!
-
-\`report\`: Have any issue or complaint? Use this command to send a secret report to the server admins.
-
-\`add-event [ADMIN only]\`: If you are a server Admin, you can announce about latest event!
-
-\`clist-live [optional- number of contests you want to see, default 1]\`: Get a list of already going contests
-
-\`clist-up [optional- number of contests you want to see, default 1]\`: Get a list of upcoming contests
+Apart from the other commands, here are some more features I've been built into:
+- Whenever a new user joins, I DM him/her asking about his/her real name and college. Upon getting a response, I set their nicknames to their real names (as many forget to change their alias!) and also assign them the role @KGECian if they are from KGEC
+- There is a #🔖-get-roles channel wherein, a user can select his/her domain of interest by clicking on an emote and I automatically add the domain's badge to his/her profile so that others are able to know each other's interests!
 `
+
 
 
 const helpHandler = (message, args) => {
