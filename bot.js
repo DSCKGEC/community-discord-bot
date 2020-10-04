@@ -95,6 +95,7 @@ client.on("guildMemberAdd", async (member) => {
 			if (name !== "You ran out of time! (1m). Please contact an admin to verify again.") {
 				let college = await dmprompt(channel, `Alright **${name}**!\nWhat college or institution are you from 🧐?`, member)
 				if (college === "KGEC" || college === "Kalyani Government Engineering College") member.roles.add(KGrole)
+				member.setNickname(name);
 				channel.send(`Welcome and enjoy your stay!\n\nTo get started, head on to the 🔖get-roles channel and pick up your domains of interest and do not forget to drop a **Hi** in the general chat channel!`)
 			} else {
 
