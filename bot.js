@@ -54,8 +54,6 @@ async function dmprompt(channel, msg, member) {
 
 /* --- Display welcome message whenever new user joins -- */
 client.on("guildMemberAdd", async (member) => {
-	/* --- Display welcome message whenever new user joins -- */
-client.on("guildMemberAdd", async (member) => {
 	let guild = member.guild;
 	if(guild.systemChannel){ 
 		const channel = guild.systemChannel;
