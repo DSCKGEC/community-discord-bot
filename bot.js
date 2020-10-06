@@ -68,8 +68,8 @@ client.on("guildMemberAdd", async (member) => {
 
 		// Slightly smaller text placed above the member's display name
 		ctx.font = '28px sans-serif';
-		ctx.fillStyle = '#ffffff';
-		ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
+		ctx.fillStyle = '#f8faf2';
+		ctx.fillText('Welcome to our server,', canvas.width / 2.5, canvas.height / 3.5);
 
 		// Add an exclamation point here and below
 		ctx.font = applyText(canvas, `${member.displayName}!`);
@@ -81,7 +81,7 @@ client.on("guildMemberAdd", async (member) => {
 		ctx.closePath();
 		ctx.clip();
 
-		const avatar = await Canvas.loadImage(member.user.displayAvatarURL({ format: 'jpg' }));
+		const avatar = await Canvas.loadImage(member.user.displayAvatarURL({ format: 'png' }));
 		ctx.drawImage(avatar, 25, 25, 200, 200);
 
 		const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png');
