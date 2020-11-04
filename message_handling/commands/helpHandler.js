@@ -3,14 +3,13 @@ const Discord = require('discord.js')
 const dp = 'https://cdn.discordapp.com/avatars/755452647456243793/6b2cfc78d852df984b27f0968dc79718.png?size=256'
 const genericHelpMessage = new Discord.MessageEmbed()
 .setColor('#0099ff')
-    .setTitle('Hello, This is Chumly_ :wave:')
     .setURL('https://github.com/dsckgec/community-discord-bot')
-    .setDescription('I am the official bot of the DSC KGEC Community server!\n\nYou can find the community building me up here - https://github.com/dsckgec/community-discord-bot \nI would be really happy if you contribute a PR and help me grow 🤗 \n\nYou can find the list of commands I currently support below!')
+    .setDescription('Hello, This is Chumly_ :wave: \nI am the official bot of the DSC KGEC Community server!\n\nYou can find the community building me up here - https://github.com/dsckgec/community-discord-bot \nI would be really happy if you contribute a PR and help me grow 🤗 \n\nYou can find the list of commands I currently support below!')
     .setThumbnail(dp)
     .addFields(
         { name: '!ping', value: 'Check whether our bot is alive or not!' },
-        { name: '!welcome @user', value: 'Send a welcome message for mentioned user on the channel they landed on.'},
-        { name: '!boost', value: `This command is for appreciating members for their valuable contributions by awarding them a special role!` },
+        { name: '!welcome @user', value: 'Send a welcome message for mentioned user on the default channel they landed on.'},
+        { name: '!boost @user', value: `This command is for appreciating members for their valuable contributions to the community by rewarding them with a special role ⚡` },
         { name: '!submit-idea', value: 'If you have any project or event ideas, drop them in using this command!' },
         { name: '!scrape', value: 'Currently scrapes latest news and events from DSC official website' },
         { name: '!clist-up', value: 'Get a list of upcomng CP contests, passing an optional parameter for the limit.' },
