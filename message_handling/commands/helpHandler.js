@@ -1,6 +1,5 @@
 const { DiscordAPIError } = require("discord.js")
 const Discord = require('discord.js')
-let role = message.guild.roles.cache.get("755165816340611182");
 const dp = 'https://cdn.discordapp.com/avatars/755452647456243793/6b2cfc78d852df984b27f0968dc79718.png?size=256'
 const genericHelpMessage = new Discord.MessageEmbed()
 .setColor('#0099ff')
@@ -11,7 +10,7 @@ const genericHelpMessage = new Discord.MessageEmbed()
     .addFields(
         { name: '!ping', value: 'Check whether our bot is alive or not!' },
         { name: '!welcome @user', value: 'Send a welcome message for mentioned user on the channel they landed on.'},
-        { name: '!boost', value: `This command is for appreciating members for their valuable contributions by awarding them a special ${role} role!` },
+        { name: '!boost', value: `This command is for appreciating members for their valuable contributions by awarding them a special role!` },
         { name: '!submit-idea', value: 'If you have any project or event ideas, drop them in using this command!' },
         { name: '!scrape', value: 'Currently scrapes latest news and events from DSC official website' },
         { name: '!clist-up', value: 'Get a list of upcomng CP contests, passing an optional parameter for the limit.' },

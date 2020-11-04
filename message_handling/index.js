@@ -1,6 +1,7 @@
 const { prefix } = require('../config.json');
 const checkAuth = require('./commands/checkAuth');
 const welcomeCommandHandler = require('./commands/welcome');
+const testCommandHandler = require('./commands/test');
 const addEventHandler = require('./commands/addEvent');
 const scrapePage = require('./commands/scrape');
 const helpHandler = require('./commands/helpHandler');
@@ -25,6 +26,10 @@ const messageHandler = (message, announcementChannel, client) => {
         case `welcome`: 
             welcomeCommandHandler(message, args, client);
             break;
+
+        case `test`: 
+        testCommandHandler(message, args, client);
+        break;
             
         case `add-event`:
             addEventHandler(message, args, announcementChannel);
