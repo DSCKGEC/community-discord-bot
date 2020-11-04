@@ -92,7 +92,7 @@ client.on("guildMemberAdd", async (member) => {
 	if (member) {
 		let KGrole = member.guild.roles.cache.find(r => r.id === "760660088582438967");
 		member.createDM().then(async channel => {
-			let name = await dmprompt(channel, "Welcome to the Official DSC KGEC Discord Server!\n\nThis is Eowyn, the official bot of the server. We are glad that you joined us! 🤗\nPlease enter you name", member)
+			let name = await dmprompt(channel, "Welcome to the Official DSC KGEC Discord Server!\n\nThis is Chumly, the official bot of the server. We are glad that you joined us! 🤗\nPlease enter you name", member)
 			if (name != "You ran out of time! (1m). Please contact an admin to verify again.") {
 				let college = await dmprompt(channel, `Alright **${name}**!\nWhat college or institution are you from 🧐?`, member)
 				if (college === "KGEC" || college === "Kalyani Government Engineering College") member.roles.add(KGrole)
