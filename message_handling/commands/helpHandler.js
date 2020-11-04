@@ -1,6 +1,7 @@
 const { DiscordAPIError } = require("discord.js")
 const Discord = require('discord.js')
-const dp = 'https://cdn.discordapp.com/avatars/755452647456243793/d057d1e31fae9bac61de42dd4efe73b7.png?size=256'
+let role = message.guild.roles.cache.get("755165816340611182");
+const dp = 'https://cdn.discordapp.com/avatars/755452647456243793/6b2cfc78d852df984b27f0968dc79718.png?size=256'
 const genericHelpMessage = new Discord.MessageEmbed()
 .setColor('#0099ff')
     .setTitle('Hello, This is Chumly_ :wave:')
@@ -10,7 +11,7 @@ const genericHelpMessage = new Discord.MessageEmbed()
     .addFields(
         { name: '!ping', value: 'Check whether our bot is alive or not!' },
         { name: '!welcome @user', value: 'Send a welcome message for mentioned user on the channel they landed on.'},
-        { name: '!auth', value: 'To check if you are an admin of the server or not' },
+        { name: '!boost', value: `This command is for appreciating members for their valuable contributions by awarding them a special ${role} role!` },
         { name: '!submit-idea', value: 'If you have any project or event ideas, drop them in using this command!' },
         { name: '!scrape', value: 'Currently scrapes latest news and events from DSC official website' },
         { name: '!clist-up', value: 'Get a list of upcomng CP contests, passing an optional parameter for the limit.' },
@@ -20,7 +21,7 @@ const genericHelpMessage = new Discord.MessageEmbed()
         { name: 'New user joins', value: 'DM the user asking for IRL name and college. and setting their nicknames and roles accordingly' },
         { name: 'Adding domain badge to any user', value: 'There is a #🔖-get-roles channel wherein, a user can select his/her domain of interest by clicking on an emote and I automatically add the domain\'s badge to his/her profile so that others are able to know each other\'s interests!' },
     )
-    .setFooter('Also note that I do not like meteors much 🥴', dp);
+    .setFooter('I like Linux users a lot 🐧', dp);
 
 const helpHandler = (message, args) => {
     if(args.length === 0){
