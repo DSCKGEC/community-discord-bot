@@ -11,7 +11,7 @@ const genericHelpMessage = new Discord.MessageEmbed()
     .addFields(
         { name: '!ping', value: 'Check whether our bot is alive or not!' },
         { name: '!welcome @user', value: 'Send a welcome message for mentioned user on the channel they landed on.'},
-        { name: '!boost', value: `This command is for appreciating members for their valuable contributions to the community by rewarding them with a special role ⚡` },
+        { name: '!boost @user', value: `This command is for appreciating members for their valuable contributions to the community by rewarding them with a special role ⚡` },
         { name: '!submit-idea', value: 'If you have any project or event ideas, drop them in using this command!' },
         { name: '!scrape', value: 'Currently scrapes latest news and events from DSC official website' },
         { name: '!clist-up', value: 'Get a list of upcomng CP contests, passing an optional parameter for the limit.' },
