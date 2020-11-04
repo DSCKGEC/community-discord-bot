@@ -48,10 +48,9 @@ async function dmprompt(channel, msg, member) {
         })
         .catch(_ => {
             console.log(_)
-            return channel.send("You ran out of time! (1m). Please contact an admin to verify again.")
+            channel.send("You ran out of time! (1m). Please contact an admin to verify again.")
         });
 }
-
 
 
 /* --- Display welcome message whenever new user joins -- */
@@ -93,14 +92,14 @@ client.on("guildMemberAdd", async (member) => {
 	if (member) {
 		let KGrole = member.guild.roles.cache.find(r => r.id === "760660088582438967");
 		member.createDM().then(async channel => {
-			let name = await dmprompt(channel, "Welcome to the Official DSC KGEC Discord Server!\n\nThis is Dino, the official bot of the server. We are glad that you joined us! 🤗\nPlease enter you name", member)
-			if (name !== "You ran out of time! (1m). Please contact an admin to verify again.") {
+			let name = await dmprompt(channel, "Welcome to the Official DSC KGEC Discord Server!\n\nThis is Eowyn, the official bot of the server. We are glad that you joined us! 🤗\nPlease enter you name", member)
+			if (name != "You ran out of time! (1m). Please contact an admin to verify again.") {
 				let college = await dmprompt(channel, `Alright **${name}**!\nWhat college or institution are you from 🧐?`, member)
 				if (college === "KGEC" || college === "Kalyani Government Engineering College") member.roles.add(KGrole)
 				member.setNickname(name);
 				channel.send(`Welcome and enjoy your stay!\n\nTo get started, head on to the 🔖get-roles channel and pick up your domains of interest and do not forget to drop a **Hi** in the general chat channel!`)
 			} else {
-
+				return;
 			}
 		})
 

@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 const dp = 'https://cdn.discordapp.com/avatars/755452647456243793/d057d1e31fae9bac61de42dd4efe73b7.png?size=256'
 const genericHelpMessage = new Discord.MessageEmbed()
 .setColor('#0099ff')
-    .setTitle('Hello, This is Dino_ :wave:')
+    .setTitle('Hello, This is Eowyn_ :wave:')
     .setURL('https://github.com/dsckgec/community-discord-bot')
     .setDescription('I am the official bot of the DSC KGEC Community server!\n\nYou can find the community building me up here - https://github.com/dsckgec/community-discord-bot \nI would be really happy if you contribute a PR and help me grow 🤗 \n\nYou can find the list of commands I currently support below!')
     .setThumbnail(dp)
