@@ -52,7 +52,7 @@ const messageHandler = (message, announcementChannel, client) => {
             break;
             
         case `ping`:
-            message.channel.send('Chumly v1.2.1\nLast update: Welcome Cards enhancements. ');
+            message.channel.send('Chumly v1.2.2\nLast update: !submit-idea command ');
             break;
         //there are two types of listing in clist, runnning and coming
         case `clist-live`:
