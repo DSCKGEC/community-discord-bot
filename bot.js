@@ -40,7 +40,7 @@ client.once('ready', () => {
 async function dmprompt(channel, msg, member) {
     const filter = (response) => response.author.id === member.id;
     channel.send(msg)
-    return channel.awaitMessages(filter, { max: 1, time: 600000, errors: ['time'] })
+    return channel.awaitMessages(filter, { max: 1, time: 6000000, errors: ['time'] })
         .then(collected => {
             const content = collected.first().content;
             if (content.toLowerCase() === "cancel") return "cancel"
