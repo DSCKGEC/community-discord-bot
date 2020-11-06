@@ -8,7 +8,7 @@ const addEventHandler = async(message, args, announcement_channel) => {
 
     let auth = `By: ${message.author.username}`;
     let authImage = message.author.avatarURL;
-    let dp = 'https://scontent.fccu2-1.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/119198593_364554184914631_1560249641923198238_n.jpg?_nc_cat=100&_nc_sid=dbb9e7&_nc_ohc=9gMAtcvSQtAAX81I9L7&_nc_ht=scontent.fccu2-1.fna&oh=d0f5665e001be1eb3075636741c0bc76&oe=5F889F50';
+    let dp = 'https://cdn.discordapp.com/avatars/755452647456243793/6b2cfc78d852df984b27f0968dc79718.png?size=256';
 
     try{
         /* STEP 0: Get the event name */
