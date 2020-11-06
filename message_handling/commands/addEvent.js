@@ -7,8 +7,8 @@ const addEventHandler = async(message, args, announcement_channel) => {
     //extracting the author name and images
 
     let auth = `By: ${message.author.username}`;
-    let authImage = message.author.avatarURL;
-    let dp = 'https://cdn.discordapp.com/avatars/755452647456243793/6b2cfc78d852df984b27f0968dc79718.png?size=256';
+    let authImage = message.author.avatarURL();
+    let dp = 'https://avatars1.githubusercontent.com/u/58649082?s=200&v=4';
 
     try{
         /* STEP 0: Get the event name */
@@ -102,6 +102,7 @@ const addEventHandler = async(message, args, announcement_channel) => {
 
         announcement_channel.send(exampleEmbed).catch(err => {
             message.channel.send(`Error faced: ${err}`)
+            message.channel.send(eventImage)
         })
         
 
