@@ -40,7 +40,9 @@ client.once('ready', () => {
 // Reusable dmprompt function to capture DM reply
 async function dmprompt(channel, msg, member) {
     const filter = (response) => response.author.id === member.id;
-    channel.send(msg);
+    channel.send(msg).catch(err => {
+        return "err";
+    });
     return channel
         .awaitMessages(filter, { max: 1, time: 6000000, errors: ['time'] })
         .then((collected) => {
@@ -235,7 +237,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
         }
     } else if (msg.id == '755800896478117968') {
         // App
-        if (reaction.emoji.name == '🟢') {
+        if (reaction.emoji.name == '✋🏻') {
             role = msg.guild.roles.cache.get('755168990728552578');
         }
 

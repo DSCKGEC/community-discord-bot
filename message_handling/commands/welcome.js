@@ -87,6 +87,9 @@ const welcomeCommandHandler = async (message, args, client) => {
                         'Welcome to the Official DSC KGEC Discord Server!\n\nThis is Chumly, the official bot of the server. We are glad that you joined us! 🤗\nPlease enter you name',
                         member
                     );
+                    if (name = "err") {
+                        return;
+                    }
                     if (
                         name !==
                         'You ran out of time! (1m). Please contact an admin to verify again.'
@@ -148,7 +151,9 @@ const applyText = (canvas, text) => {
 
 async function dmprompt(channel, msg, member) {
     const filter = (response) => response.author.id === member.id;
-    channel.send(msg);
+    channel.send(msg).catch(err => {
+        return "err";
+    });
     return channel
         .awaitMessages(filter, { max: 1, time: 600000, errors: ['time'] })
         .then((collected) => {
