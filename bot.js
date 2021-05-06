@@ -235,10 +235,10 @@ client.on('messageReactionAdd', async (reaction, user) => {
         else {
             member.roles.add(role);
         }
-    } else if (msg.id == '755800896478117968') {
+    } else if (msg.id == '839788991166939147') {
         // App
         if (reaction.emoji.name == '✋🏻') {
-            role = msg.guild.roles.cache.get('755168990728552578');
+            role = msg.guild.roles.cache.get('839764249185091594');
         }
 
         // Fetch reacting user from the server
