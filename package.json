@@ -1,31 +1,32 @@
 {
-  "name": "y",
-  "version": "1.0.0",
-  "description": "Willy, the discord bot of DSC KGEC Discord Server",
-  "main": "bot.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js",
-    "dev": "nodemon bot.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dsckgec/community-discord-bot.git"
-  },
-  "author": "Ayush Singh",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dsckgec/community-discord-bot.git/issues"
-  },
-  "homepage": "https://github.com/dsckgec/community-discord-bot.git#readme",
-  "dependencies": {
-    "canvas": "^2.6.1",
-    "cheerio": "^1.0.0-rc.3",
-    "discord.js": "^12.3.1",
-    "express": "^4.17.1",
-    "request": "^2.88.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "name": "y",
+    "version": "1.0.0",
+    "description": "Willy, the discord bot of DSC KGEC Discord Server",
+    "main": "bot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node bot.js",
+        "dev": "nodemon bot.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dsckgec/community-discord-bot.git"
+    },
+    "author": "Ayush Singh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dsckgec/community-discord-bot.git/issues"
+    },
+    "homepage": "https://github.com/dsckgec/community-discord-bot.git#readme",
+    "dependencies": {
+        "canvas": "^2.6.1",
+        "cheerio": "^1.0.0-rc.3",
+        "discord.js": "^12.3.1",
+        "dotenv": "^9.0.0",
+        "express": "^4.17.1",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }
