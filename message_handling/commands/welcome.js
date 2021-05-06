@@ -15,12 +15,12 @@ const welcomeCommandHandler = async (message, args, client) => {
                 const canvas = Canvas.createCanvas(900, 500);
                 const ctx = canvas.getContext('2d');
 
-                Canvas.registerFont('/assets/UniSans.otf', { family: 'Uni Sans' });
+                Canvas.registerFont('./assets/UniSans.otf', { family: 'Uni Sans' });
 
                 const num = Math.floor(Math.random() * 10) + 1;
 
                 const background = await Canvas.loadImage(
-                    `/assets/background${num}.jpg`
+                    `./assets/background${num}.jpg`
                 );
                 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
