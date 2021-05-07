@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/DSCKGEC/community-discord-bot">
-        <img src="https://raw.githubusercontent.com/DSCKGEC/community-discord-bot/master/DISCORD%20CHAT%20BOT.png" alt="Discord Bot">
+        <img src="./assets/header.png" alt="Discord Bot">
     </a>
 </p>
 
@@ -47,3 +47,11 @@ Though web scraping is identified globally, some websites may have private pages
 ### LICENSE
 
 The current project is under the MIT License. View [LICENSE](https://github.com/DSCKGEC/community-discord-bot/blob/master/LICENSE) for more details
+
+### Contributors
+
+<a href="https://github.com/dsckgec/community-discord-bot/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dsckgec/community-discord-bot" />
+</a>
+
+<!--Made with Contrib.Rocks-->
